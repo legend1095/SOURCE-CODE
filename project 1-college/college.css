@@ -1,0 +1,83 @@
+.menu__ ul{
+    list-style-type: none;
+    display: flex;
+    background-color: rgb(16, 23, 87);
+    justify-content: space-between;
+    padding: 1px 5px 1px 5px;
+    transition: all 0.3s;
+}
+.menu__ ul li a{
+    color: white;
+    text-decoration: none;
+    }
+.menu__ ul li a:hover/*:not(.fa-angle-down)*/{
+    color: orange;
+}
+.container{
+    display: flex;
+    padding: 1% 0% 1% 5%;
+    background-color: rgb(13, 18, 65);
+}
+.buttons{
+    padding-left: 5%;
+    cursor: pointer;
+    
+}
+.buttons button{
+    color:blue;
+    border: 2px double black;
+}
+.img{
+    display: flex; 
+    padding-left: 5%;  
+}
+.hover button{
+    color: black;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: orange;
+    
+}
+.hover{
+    padding: 6px 0px 1px 40px;
+    
+   
+}
+.list{
+display: block;
+position: absolute;
+z-index: 999;
+display: none;
+
+}
+
+
+.list ul{
+    display: block;
+    margin-left: -5px;
+    
+}
+.list ul li{
+    width: 150px; 
+    padding: 6px;
+    border-bottom: 1px solid orange;
+    margin: 10px;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+    
+}
+.list ul li:last-child{
+    border-bottom: none;
+}
+.menu__ ul li:hover .list{
+    display: block;
+    position:absolute;    
+}
+.fa-angle-down:hover{
+    color: red;
+}
